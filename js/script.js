@@ -33,7 +33,7 @@ function manu() {
 }
 
 function show() {
-    $('.phone__button').click(function () {
+    $('.phone__button, .phone__button-mobale').click(function () {
         $('.form__phone').fadeIn();
         disableScrolling();
         $("body").css("overflow", "hidden");

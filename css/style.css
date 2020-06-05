@@ -55,19 +55,19 @@ html{
     height: 100%;
     text-align: center;
     display: none;
-    padding: ;
 }
 
 .thanks__text{
     background-color: white;
     display: inline-flex;
-    padding: 70px;
+    padding: 50px;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 900;
     color: #f55;
-    margin: 20% 35%;
+    margin: 20% 0;
+    box-sizing: border-box;
 }
 
 .header-boss{
@@ -469,10 +469,6 @@ from{
 
 }
 
-.prodgect{
-    
-}
-
 .prodgect_margin{
     padding: 100px 20px;
 }
@@ -533,6 +529,10 @@ from{
 }
 
 .footer__link:hover{
+    opacity: 0.6;
+}
+
+.footer__link:active{
     opacity: 0.6;
 }
 
@@ -855,6 +855,11 @@ from{
         left: 23%;
     }
     
+    .thanks__text{
+        padding: 30px;
+        font-size: 35px;
+    }
+    
 }
 
 @media (max-width : 576px){
@@ -933,6 +938,16 @@ from{
     .symbols__slshs {
         font-size: 20px;
     }
+
+    .thanks__text{
+        max-width: 300px;
+        font-size: 25px;
+    }
+
+    .menu-phone__menu {
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 484px){
