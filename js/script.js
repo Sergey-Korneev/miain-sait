@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(".phone__masc").mask("+7 (999) 99-99-999");
     show();
     manu();
     $('.slider').slick({
@@ -21,6 +22,7 @@ $(document).ready(function () {
             }
     ]
     });
+    form();
 });
 
 function manu() {
@@ -66,4 +68,23 @@ function disableScrolling(){
 
 function enableScrolling(){
     window.onscroll=function(){};
+}
+
+function form() {
+    $("form").submit(function (e) { 
+        e.preventDefault();
+        let form__data = $(this).serialize();
+        $.ajax({
+            type: "POST",
+            url: "https://echo.htmlacademy.ru/",
+            data: form__data,
+            success: function () {
+                $('.thanks').fadeIn();
+                setTimeout(function () {
+                    $('.thanks').fadeOut();
+                    $('form').trigger('reset');
+                }, 3000);
+            }
+        });
+    });
 }

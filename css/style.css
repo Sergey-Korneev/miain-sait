@@ -1,3 +1,7 @@
+*{
+    outline: none;
+}
+
 p, h1, h2, h3, h4, h5, a, ul, span, body {
     margin: 0;
     padding: 0;
@@ -11,11 +15,58 @@ body{
     background-color: #fcfcfc;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .contain{
     max-width: 1170px;
     min-width: 320px;
     padding: 0 20px;
     margin: 0 auto;
+}
+
+.error{
+    position: fixed;
+    z-index: 100;
+    background: url(..//img/Z.png);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.error__text{
+    background-color: white;
+    display: inline-flex;
+    padding: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: #f55;
+    margin: 20% 45%;
+}
+
+.thanks{
+    position: fixed;
+    z-index: 100;
+    background: url(..//img/Z.png);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+
+.thanks__text{
+    background-color: white;
+    display: inline-flex;
+    padding: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: #f55;
+    margin: 20% 35%;
 }
 
 .header-boss{
@@ -65,6 +116,25 @@ body{
     border: 1px solid #df437f;
     white-space: nowrap;
     display: inline;
+    transition: 0.2s;
+}
+
+.phone__button:hover{
+    color: #b83f45;
+    border: 1px solid #c22e67;
+    box-shadow: 0px 0px 10px 4px #c22e6720;
+}
+
+.phone__button:focus{
+    color: #b83f45;
+    border: 1px solid #c22e67;
+    box-shadow: 0px 0px 10px 4px #c22e6720;
+}
+
+.phone__button:active{
+    color: #ff000d;
+    border: 1px solid #c22e67;
+    box-shadow: 0px 0px 10px 4px #ff006230;
 }
 
 .phone__button_internal-margin{
@@ -82,6 +152,17 @@ body{
 
 .menu-phone__paragraph{
     color: black;
+    transition: 0.2s;
+}
+
+.menu-phone__paragraph:hover{
+    border-bottom: 1px solid #fc557c;
+    color: #fc557c;
+}
+
+.menu-phone__paragraph:active{
+    border-bottom: 1px solid #fc557c;
+    color: #ff2255;
 }
 
 .menu-phone{
@@ -103,6 +184,20 @@ body{
     color: white;
     padding: 20px 70px;
     border: none;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background-color: #e04226;
+}
+
+.button:focus{
+    background-color: #e04226;
+    box-shadow: 0px 0px 20px 5px rgba(224, 66, 38, 0.4);
+} 
+
+.button:active{
+    background: linear-gradient(180deg,#ec4f34, #ff2600) ;
 }
 
 .blok-name__button_margin{
@@ -373,6 +468,10 @@ from{
 
 }
 
+.prodgect{
+    
+}
+
 .prodgect_margin{
     padding: 100px 20px;
 }
@@ -390,6 +489,12 @@ from{
 
 .footer__paragraph{
     color: #8993ad;
+    transition: 0.2s;
+}
+
+.footer__paragraph:hover{
+    border-bottom: 1px solid #fc557c;
+    color: #fc557c;
 }
 
 .footer__contact{
@@ -423,6 +528,11 @@ from{
     width: 40px;
     height: 40px;
     display: inline-block;
+    transition: 0.2s;
+}
+
+.footer__link:hover{
+    opacity: 0.6;
 }
 
 .footer__vk{
@@ -547,6 +657,16 @@ from{
     position: absolute;
     top: 35%;
     z-index: 10;
+    transition: 0.2s;
+}
+
+.slider .slick-arrow:hover{
+    box-shadow: 0px 0px 20px #00000030;
+}
+
+.slider .slick-arrow:focus {
+    box-shadow: 0px 0px 20px #00000030;
+    border: none;
 }
 
 .slider{
@@ -611,6 +731,10 @@ from{
         background-color: #fcfcfc;
         z-index: 5;
         font-size: 20px;
+    }
+
+    .input_width {
+        margin: 20% auto;
     }
 
     .Services__coloum_width {
@@ -863,306 +987,11 @@ from{
     .Services__coloum_width {
         padding: 20px 0;
     }
-}
 
-/* .inl{
-    display: inline;
-}
-
-.color-b{
-    background: linear-gradient(0deg, #fa1797,#f36034);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0 20px 0 0;
-}
-
-li{
-    margin: 0 35px 0 0;
-    padding: 0 0 5px 0;
-    list-style-type: none;    
-}
-
-li:hover{
-    color: #e56f8b;
-    border-bottom: 1px solid #e56f8b;
-    transition: 1s;
-}
-
-.menu{
-    padding: 30px 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.tel-namb{
-    font-weight: bold;
-    font-size: 25px;
-    margin: 0 30px 0 0;
-}
-
-.tel-bottom{
-    color: #de5a61;
-    padding: 18px 40px;
-    border: 1px solid #df437f;
-    white-space: nowrap;
-    display: inline;
-}
-
-.head-name {
-    position: absolute;
-    margin: 240px 0 0;
-    z-index: 2;
-    flex-direction: column;
-}
-
-.head-name-boss{
-    font-weight: 900;
-    color: #2e2e33;
-    font-size: 80px;
-    margin-bottom: 25px;
-}
-
-.head-name-side{
-    font-size: 25px;
-    color: #9ca3b8;
-    margin: 0 0 75px 0;
-}
-
-.botton{
-    background-color: #e66843;
-    color: white;
-    padding: 25px 70px;
-}
-
-.cost{
-    color: white;
-    margin: 0 auto;
-    padding: 87px 0;
-    background: linear-gradient(to left bottom,#eda272, #e54fa1 );
-}
-
-.cost-text{
-    max-width: 950px;
-}
-
-.cost-text-side{
-    max-width: 770px;
-    font-size: 18px;
-    margin: 40px 0 0 0;
-}
-
-.cost-text-boss{
-    font-size: 45px;
-    font-weight: bold;
-}
-
-.manu-port{
-    position: absolute;
-    padding: 20px 0 0 0;
-    width: 90%;
-    margin: 20px 0 0 0;
-    background-color: #fcfcfc;
-    display: none;
-    font-size: 20px;
-    z-index: 10;
-}
-
-.manu-port li{
-    margin: 10px 0 10px 0;
-    border-bottom: 1px solid rgb(184, 184, 184);   
-}
-
-.manu-punct{
-    color: black;
-}
-
-.burger{
-    display: none;
-    max-width: 45px;
-}
-
-.scrol{
-    margin: 20px 0 20px;
-}
-
-.scrol-blok{
-    padding: 90px 5px 125px;
-    display: flex;
-    flex-direction: column;
-}
-
-.scrol-block-text{
-    font-size: 54px;
-    font-weight: bold;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-}
-
-.arrow{
-    box-shadow: 0px 0px 20px #00000010;
-    border-radius: 50px;
-}
-
-.scrol-blok-bottom{
-    width: 280px;
-    box-sizing: border-box;
-    white-space: nowrap;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.curs-point{
-    cursor: pointer;
-}
-
-.footer-ul{
-    flex-direction: column;
-    display: flex;
-    font-size: 18px;
-    margin: 0 40px 50px 0;
-}
-
-.footer-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 80px 0px 30px;
-}
-
-.footer-conection{
-    margin: 0 30px 50px 0;
-    flex-direction: column;
-    display: flex;
-    font-size: 25px;
-}
-
-.fa-phone{
-    transform: rotate(90deg);
-    
-}
-
-.vk{
-    background: url(..//img/sprait.png) 150px -11px;
-    background-size: 304px;
-}
-
-.feis{
-    background: url(..//img/sprait.png) 294px -11px;
-    background-size: 304px;
-    margin: 0 25px 0 25px;
-}
-
-.tvit{
-    background: url(..//img/sprait.png) 257px -11px;
-    background-size: 304px;
-    margin: 0 25px 0 0;
-}
-
-.inst{
-    background: url(..//img/sprait.png) 185px -11px;
-    background-size: 304px;
-}
-
-.link-soc-icon{
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-}
-
-.link-soc{
-    margin: 50px 0 0;
-}
-
-.footer-ul-punkt{
-    margin: 0 0 20px 0;
-}
-
-.foot-tel{
-    margin: 0 0 35px 0;
-}
-
-.tel-bottom-foot{
-    color: #de5a61;
-    padding: 18px 40px;
-    border: 1px solid #df437f;
-    white-space: nowrap;
-    display: inline;
-}
-
-.posit{
-    
-}
-
-
-
-
-
-
-
-
-@media (max-width: 445px){
-    .contain{
-        min-width: 280px;
+    .input_width{
+        width: 220px;
     }
-
-    .head-name-botton {
-
-        padding: 20px 70px;
+    .prodgect_margin {
+        padding: 100px 0;
     }
-
-    .footer-conection{
-        font-size: 20px;
-    }
-
-    .burger{
-        max-width: 25px;
-        max-height: 20px;
-    }
-
-    .tel-namb{
-        font-size: 18px;
-    }
-
-    .header-marg {
-        margin: 0 0 200px 0;
-    }
-
-    .poe {
-        background-position: 110% 100%;
-    }
-
-    .ss {
-        background-position: 50% 200px;
-        background-size: 110%;
-    }
-
-    .head-name {
-        margin: 430px 0 0;
-    }
-
-    .head-name-boss{
-        font-size: 30px;
-        margin: 0 0 10px 0;
-    }
-
-    .head-name-side{
-        font-size: 16px;
-        margin: 0 0 30px 0;
-    }
-
-    .manu-port {
-        margin: 0;
-    }
-
-    .cost-text-boss {
-        font-size: 28px;
-    }
-
-    .cost-text-side {
-        font-size: 16px;
-    }
-} */
+}

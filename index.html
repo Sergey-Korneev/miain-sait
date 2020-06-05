@@ -9,19 +9,30 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 <body>
+    <div class="thanks">
+        <div class="thanks__text">
+            Спасибо за&nbsp;вашу заявку!
+        </div>
+    </div>
+    <div class="error">
+        <div class="error__text">
+            Заполните форму
+        </div>
+    </div>
+    <div class="sssdd">
     <div class="form form__phone">
-        <form class="input input_width" action="">
-            <input type="tel" placeholder="Ваш номер">
-            <input type="text" placeholder="Ваше имя">
-            <button class="button">Заказать&nbsp;звонок</button>
+        <form class="input input_width" action="https://echo.htmlacademy.ru/">
+            <input required class="phone__masc" name="tel" type="tel" placeholder="Ваш номер">
+            <input required class="name" name="name" type="text" placeholder="Ваше имя">
+            <button type="submit" class="button">Заказать&nbsp;звонок</button>
         </form>
     </div>
     <div class="form form__qests">
-        <form class="input input_width" action="">
-            <input type="tel" placeholder="Ваш номер">
-            <input type="text" placeholder="Ваше имя">
-            <input type="email" placeholder="Ваша почта">
-            <button class="button">Заказать&nbsp;звонок</button>
+        <form class="input input_width" action="https://echo.htmlacademy.ru/">
+            <input required class="phone__masc" name="tel" type="tel" placeholder="Ваш номер">
+            <input required class="name" name="name" type="text" placeholder="Ваше имя">
+            <input required class="mail" name="mail" type="email" placeholder="Ваша почта">
+            <button type="submit" class="button">Заказать&nbsp;звонок</button>
         </form>
     </div>
 <header>
@@ -32,9 +43,9 @@
                     <img class="menu-phone__menu-mobile" src="img/burg.png" alt="">
                     <div class="menu-phone__menu-slide">
                         <nav class="menu-phone__menu">
-                            <a href="#" class="menu-phone__paragraph menu-phone__paragraph_margin-right">Услуги</a>
-                            <a href="#" class="menu-phone__paragraph menu-phone__paragraph_margin-right menu-phone__paragraph_margin-mobile">Портфолио</a>
-                            <a href="#" class="menu-phone__paragraph">Стоимость</a>
+                            <a href="#Services" class="menu-phone__paragraph menu-phone__paragraph_margin-right">Услуги</a>
+                            <a href="#Portfolio" class="menu-phone__paragraph menu-phone__paragraph_margin-right menu-phone__paragraph_margin-mobile">Портфолио</a>
+                            <a href="#Cost" class="menu-phone__paragraph">Стоимость</a>
                         </nav>
                     </div>
                 </div>
@@ -79,7 +90,7 @@
         </div>
     </div>
 </header>
-<section class="Services Services_internal-margin">
+<section id="Services" class="Services Services_internal-margin">
 <div class="contain">
     <h2 class="title">Что я делаю</h2>
     <div class="Services__skills Services__skills_margin">
@@ -121,7 +132,7 @@
     </div>
 </div>
 </section>
-<section class="prodgect prodgect_margin">
+<section id="Portfolio" class="prodgect prodgect_margin">
     <div class="contain">
         <h2 class="title">Примеры моих работ</h2>
         <div class="slider slider_margin">
@@ -151,7 +162,7 @@
         </div>
     </div>
 </section>
-<section class="stock">
+<section id="Cost" class="stock">
     <div class="contain">
         <div class="stock_width stock_internal-margin">
             <h2 class="stock__title stock_color">
@@ -175,9 +186,9 @@
         <div class="footer__contain footer__contain_margin">
             <div class="footer__menu_width">
                 <nav class="colum">
-                    <a href="#" class="footer__paragraph">Услуги</a>
-                    <a href="#" class="footer__paragraph footer__paragraph_indent">Портфолио</a>
-                    <a href="#" class="footer__paragraph">Стоимость</a>
+                    <a href="#Services"><span class="footer__paragraph">Услуги</span></a>
+                    <a href="#Portfolio" class="footer__paragraph_indent"><span class="footer__paragraph">Портфолио</span></a>
+                    <a href="#Cost"><span class="footer__paragraph">Стоимость</span></a>
                 </nav>
             </div>
             <div class="colum">
@@ -205,8 +216,10 @@
     </div>
     
 </footer>
+</div>
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
