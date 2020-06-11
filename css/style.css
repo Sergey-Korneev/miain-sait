@@ -145,6 +145,15 @@ html{
 .phone__namper{
     font-weight: bold;
     font-size: 25px;
+    transition: .2s;    
+}
+
+.phone__namper:hover{
+    color: #fc557c;
+}
+
+.phone__namper:active{
+    text-shadow: 0px 0px 15px #e709095e;
 }
 
 .phone__namper_margin{
@@ -160,6 +169,7 @@ html{
     border-bottom: 1px solid #fc557c;
     color: #fc557c;
 }
+
 
 .menu-phone__paragraph:active{
     border-bottom: 1px solid #fc557c;
@@ -186,6 +196,7 @@ html{
     padding: 20px 70px;
     border: none;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .button:hover{
@@ -431,6 +442,7 @@ from{
 .stock_position{
     position: absolute;
     font-weight: 700;
+    cursor: context-menu;
 }
 
 .stock__bracket-top{
@@ -496,6 +508,11 @@ from{
 
 .footer__contact{
     font-size: 25px;
+    transition: .2s;
+}
+
+.footer__contact:hover{
+    color: #fc557c;
 }
 
 .footer_margin{
@@ -570,6 +587,14 @@ from{
     min-width: 220px;
 }
 
+.fa-times{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
 .slider__text{
     color: gray;
 }
@@ -611,6 +636,7 @@ from{
     font-size: 0;
     background: url(..//img/arrow.png) 0 0 no-repeat;
     left: 0;
+    cursor: pointer;
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
@@ -618,6 +644,7 @@ from{
     background: url(..//img/arrow.png) 0 0 no-repeat;
     transform: rotate(180deg);
     right: 0;
+    cursor: pointer;
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
@@ -630,6 +657,10 @@ from{
 .slick-dots li{
     list-style: none;
 }
+
+.slick-dots button{
+    cursor: pointer;
+}
 /* Активная точка */
 .slick-dots li.slick-active{
     
@@ -637,6 +668,7 @@ from{
 
 .slider__img{
     max-width: 310px;
+    cursor: pointer;
 }
 
 .slider__item{
@@ -652,6 +684,11 @@ from{
     border: none;
     margin: 0 10px;
     background-color: thistle;
+    transition: .2s;
+}
+
+.slick-dots li button:hover{
+    box-shadow: 0px 0px 10px #c20d0d4f;
 }
 
 .slider .slick-arrow{
@@ -692,10 +729,18 @@ from{
     display: none;
 }
 
+.form__title{
+    text-align: center;
+    margin: 0 0 25px;
+    font-size: 29px;
+    font-weight: 900;
+}
+
 .input{
     display: flex;
     flex-direction: column;
     background-color: white;
+    position: relative;
 }
 
 .input input{
@@ -708,8 +753,9 @@ from{
 .input_width{
     width: 280px;
     margin: 20% 40%;
-    padding: 70px 40px;
+    padding: 50px 40px;
 }
+
 
 @media (max-width : 1024px){
 
@@ -893,6 +939,7 @@ from{
 
     .phone__namper_margin{
         margin: 0 auto;
+        transition: .2s;
     }
 
     .human-background {
@@ -951,6 +998,10 @@ from{
 }
 
 @media (max-width: 484px){
+    .form__title{
+        font-size: 23px;
+    }
+
     .phone__namper{
         font-size: 18px;
     }
@@ -984,6 +1035,10 @@ from{
         font-size: 35px;
     }
 
+    .button {
+        padding: 20px 59px;
+    }
+
     .stock__title {
         font-size: 27px;
     }
@@ -1001,7 +1056,7 @@ from{
     }
 
     .Services__coloum_width {
-        padding: 20px 0;
+        padding: 20px 21px;;
     }
 
     .input_width{

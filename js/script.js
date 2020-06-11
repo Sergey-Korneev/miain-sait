@@ -46,6 +46,12 @@ function show() {
             $("body").css("overflow", "auto");
         }
     });
+    $('.fa-times').click(function () {
+        $('.form__phone').fadeOut(1000);
+        enableScrolling();
+        $("body").css("overflow", "auto");
+    });
+
     $('.button__qests').click(function () {
         $('.form__qests').fadeIn();
         disableScrolling();
@@ -57,6 +63,11 @@ function show() {
             enableScrolling();
             $("body").css("overflow", "auto");
         }
+    });
+    $('.fa-times').click(function () {
+        $('.form__qests').fadeOut(1000);
+        enableScrolling();
+        $("body").css("overflow", "auto");
     });
 }
 
@@ -80,10 +91,13 @@ function form() {
             data: form__data,
             success: function () {
                 $('.thanks').fadeIn();
+                $('.form__qests, .form__phone').fadeOut(1000);
+                enableScrolling();
+                $("body").css("overflow", "auto");
                 setTimeout(function () {
                     $('.thanks').fadeOut();
                     $('form').trigger('reset');
-                }, 3000);
+                }, 2000);
             }
         });
     });
