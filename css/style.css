@@ -1,21 +1,23 @@
 *{
     outline: none;
+    font-family: 'Roboto', sans-serif;
 }
 
-p, h1, h2, h3, h4, h5, a, ul, span, body {
+.text, .title__h1, .title__h2, .links, .list {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style-type: none;
     color: #1f1f24;
 }
 
-body{
+.body{
     background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
 }
 
-html{
+.html{
     scroll-behavior: smooth;
 }
 
@@ -24,27 +26,6 @@ html{
     min-width: 320px;
     padding: 0 20px;
     margin: 0 auto;
-}
-
-.error{
-    position: fixed;
-    z-index: 100;
-    background: url(..//img/Z.png);
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.error__text{
-    background-color: white;
-    display: inline-flex;
-    padding: 70px;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    font-weight: 900;
-    color: #f55;
-    margin: 20% 45%;
 }
 
 .thanks{
@@ -70,22 +51,13 @@ html{
     box-sizing: border-box;
 }
 
-.header-boss{
-    display: flex;
-    justify-content: space-between;
-}
-
-.balck-color{
-    color: black;
-}
-
 .background-eleps{
-    background: url(../img/Ellipse.svg) no-repeat 100% 130px;
+    background: url(../img/Ellipse.webp) no-repeat 100% 130px;
     background-size: 825px;
 }
 
 .human-background{
-    background: url(../img/peo.png) no-repeat 100% 95px;
+    background: url(../img/peo.webp) no-repeat 100% 95px;
 }
 
 .menu-phone{
@@ -220,7 +192,7 @@ html{
     padding: 200px 0 225px;
 }
 
-.symbols > p{
+.symbols__text{
     font-weight: 900;
     color: #f63160;
     background: linear-gradient(90deg, #fa0890, #f25e2a);
@@ -385,11 +357,11 @@ from{
     padding: 95px 0 100px 0;
 }
 
-.subtitle_margin-top{
+.Services__subtitle_margin-top{
     margin: 25px 0 0 0;
 }
 
-.gray-subtitle{
+.Services__subtitle_gray{
     color: #8993ad;
 }
 
@@ -579,6 +551,10 @@ from{
     margin: 30px 0 0;
 }
 
+.menu-phone__menu{
+    display: flex;
+}
+
 .menu-phone__menu-mobile{
     display: none;
 }
@@ -599,13 +575,6 @@ from{
     color: gray;
 }
 
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
 .slick-list {
     overflow: hidden;
 }
@@ -613,16 +582,6 @@ from{
 .slick-track{
     display: flex;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
 /* Стрелка */
 .slick-arrow{
     width: 61px;
@@ -646,8 +605,6 @@ from{
     right: 0;
     cursor: pointer;
 }
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
 /* Точки (булиты) */
 .slick-dots{
     display: flex;
@@ -660,10 +617,6 @@ from{
 
 .slick-dots button{
     cursor: pointer;
-}
-/* Активная точка */
-.slick-dots li.slick-active{
-    
 }
 
 .slider__img{
@@ -743,7 +696,7 @@ from{
     position: relative;
 }
 
-.input input{
+.input__field{
     margin: 0 0 20px;
     background-color: #eae3e3;
     border: none;
@@ -752,7 +705,7 @@ from{
 
 .input_width{
     width: 280px;
-    margin: 20% 40%;
+    margin: 0 auto;
     padding: 50px 40px;
 }
 
@@ -764,7 +717,12 @@ from{
     }
 
     .background-eleps {
-        background: url(../img/Ellipse-mob.svg) no-repeat 100% 190px;
+        background: url(../img/Ellipse-mob.webp) no-repeat 100% 190px;
+        background-size: 520px;
+    }
+
+    .menu-phone__paragraph_margin-mobile{
+        padding: 20px 0 20px 0;
     }
 
     .menu-phone__menu-mobile{
@@ -778,6 +736,7 @@ from{
         background-color: #fcfcfc;
         z-index: 5;
         font-size: 20px;
+        padding: 20px 0 0 0;
     }
 
     .input_width {
@@ -860,7 +819,7 @@ from{
     }
 
     .background-eleps {
-        background: url(../img/Ellipse.svg) no-repeat 100% 240px;
+        background: url(../img/Ellipse.webp) no-repeat 100% 240px;
         background-size: 645px;
     }
 
@@ -929,7 +888,7 @@ from{
     }
 
     .background-eleps {
-        background: url(../img/Ellipse.svg) no-repeat 100% 270px;
+        background: url(../img/Ellipse.webp) no-repeat 100% 270px;
         background-size: 615px;
     }
 
